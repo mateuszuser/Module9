@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Wymiana walut</title>
+        <!--<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">-->
+    </head>
+    <body>
+        <form action="" method="post">
+
+            <label for="currency">Wybierz walutę:</label>
+            <select name="currency" id="currency">
+                <option value="USD">USD</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="EUR">EUR</option>
+                <option value="HUF">HUF</option>
+                <option value="CHF">CHF</option>
+                <option value="GBP">GBP</option>
+                <option value="JPY">JPY</option>
+                <option value="CZK">CZK</option>
+                <option value="DKK">DKK</option>
+                <option value="NOK">NOK</option>
+                <option value="SEK">SEK</option>
+                <option value="XDR">XDR</option>
+            </select>
+
+            <br>
+            <br>
+        
+            <label for="quantity">Ile waluty wymienić:</label>
+            <input type="text" id="quantity" name="quantity"><br>
+
+            <br>
+            
+            <input type="submit" value="Przelicz">
+
+        </form>
+        <p>Koszt tej operacji w PLN to: {{koszt}}</p>
+
+    </body>
+</html>
+
